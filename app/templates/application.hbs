@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h3>w/o changeset</h3>
+<p>Parent: {{parent.name}}</p>
+<p>Parent's children length: {{parent.children.length}}</p>
+<a {{action "addChild1"}}>Click to add a child</a>
 
-{{outlet}}
+<h3>w changeset</h3>
+<p>Parent: {{changeset.name}}</p>
+<p>Parent's children length: {{changeset.children.length}}</p>
+<a {{action "addChild2"}}>Click to add a child</a>
